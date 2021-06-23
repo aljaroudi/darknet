@@ -17,12 +17,12 @@ ZED_CAMERA_v2_8=0
 USE_CPP=0
 DEBUG=0
 
-ARCH= -gencode arch=compute_53,code=[sm_53,compute_53]
+# ARCH= -gencode arch=compute_53,code=[sm_53,compute_53]
 
 OS := $(shell uname)
 
 # GeForce RTX 3070, 3080, 3090
-# ARCH= -gencode arch=compute_86,code=[sm_86,compute_86]
+ARCH= -gencode arch=compute_86,code=[sm_86,compute_86]
 
 # Kepler GeForce GTX 770, GTX 760, GT 740
 # ARCH= -gencode arch=compute_30,code=sm_30
